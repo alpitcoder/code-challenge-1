@@ -53,7 +53,7 @@
       </div>
       <div class="col-lg offset-lg-1">
         <div class="form-group">
-          <%= f.text_field :email, class: "form-control", placeholder: "hello@company.com"%>
+          <%= f.text_field :email, class: "form-control", placeholder: "hello@getmainstreet.com"%>
         </div>
       </div>
     </div>
@@ -68,6 +68,17 @@
           </div>
       </div>
     </div>
+
+     <div class="row my-lg-3">
+       <div class="col-lg-3">
+         <label><strong>Color</strong><br><small class="text-muted">Choose the color for company detail page</small></label>
+       </div>
+       <div class="col-lg offset-lg-1">
+         <div class="form-group">
+           <%= f.color_field :color, value: @company.color, class: "color-input"%>
+         </div>
+       </div>
+     </div>
 
     <div class="row my-lg-3">
       <div class="col">
